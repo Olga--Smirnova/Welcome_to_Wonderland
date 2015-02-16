@@ -1,0 +1,8 @@
+Time : 20:57:16
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 09:28:15
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 09:27:00
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty

@@ -1,0 +1,37 @@
+Time : 15:47:15
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'pipa@gmail.com' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:21:35
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@gmail.com' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:19:17
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 10:18:15
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@gmail.com' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:11:25
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 08:39:41
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'
+Raw SQL : INSERT INTO tbl_users (password) VALUES(:new_password)
+
+Time : 08:38:56
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Pipa-africa01.jpg' for key 'username'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 08:36:59
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':, ?, ?)' at line 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :, :statement, :answer)
+
+Time : 08:36:33
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':, ?, ?)' at line 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :, :statement, :answer)
+
+Time : 08:32:58
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':, ?, ?)' at line 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :, :statement, :answer)

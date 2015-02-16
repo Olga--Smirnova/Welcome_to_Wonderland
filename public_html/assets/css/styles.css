@@ -1,0 +1,893 @@
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+*,:after,:before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+section, header, nav, footer, ul, li, li a, p, label, input {
+    display: block;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+li a, a {
+    text-decoration: none;
+}
+
+p {
+    color: rgb(53, 58, 63);
+}
+
+/*******************************************************************************************************/
+    /*FONTS */
+/*******************************************************************************************************/   
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(../fonts/HelveticaNeue-Thin.otf);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: .04em;
+    background-color: rgb(206, 210, 211);
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.85em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0;
+    font-family: HelveticaNeue, 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: .39em;
+    background-color: rgb(53, 58, 63);
+    padding-top: .9em;
+}
+
+h2 {
+    font-size: 1.25em;
+    font-family: HelveticaNeue, 'Open Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: .2em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: rgb(1, 181, 154);
+    font-weight: 600;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+h4, p.validation_msg, p.validation_msg_grey, p.top_validation, p, .grey_bcgr ul li a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    color: rgb(53, 58, 63);
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(53, 58, 63);
+    position: relative;
+}
+
+#container {
+    padding-top: 1em;
+}
+
+h2, nav, #ribbon, #container {
+    width: 42em;
+    margin: 0 auto;
+    height: auto;
+}
+
+span {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+
+/******************************************************************************************************************/
+    /* BUTTONS STYLES */
+/******************************************************************************************************************/
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button, input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+
+#search_btn {
+    cursor: pointer;
+    width: 1.58em;
+    height: 1.58em;
+    position: absolute;
+    right: 1.3em;
+    top: .06em;
+}
+
+nav form i {
+    position: absolute;
+    bottom: .15em;
+    left: .18em;
+}
+
+button, input[type="submit"], #admin_options li a, .scrollToTop {
+    background-color: rgb(1, 181, 154);
+    width: 8.8em;
+    height: 2.2em;
+    border: .15em solid white;
+    color: white;
+    font-family: HelveticaNeue, 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 200%;
+    letter-spacing: .04em;
+    border-radius: 0;
+}
+
+.scrollToTop {
+    text-align: center; 
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    border: .15em solid rgb(206, 210, 211);
+    display: none;
+}
+
+button:hover, input[type="submit"]:hover, .scrollToTop:hover {
+    border-color: rgb(1, 181, 154);
+}
+
+#log_btn, #sign_btn {
+    float: right;
+    margin-top: 1em;
+    margin-bottom: .6em;
+    margin-right: .64em;
+}
+
+#sign_btn {
+    margin-top: 8.6em;
+}
+
+#true_sign_btn {
+    margin-bottom: .6em;
+    margin-top: 2em;
+}
+
+/*user's option btn styles */
+#post_it, #upload_it, #delete_it, #comment_it {
+    margin-bottom: .6em;
+    margin-top: 1em;
+}
+
+#comment_it {
+    margin-left: 1em;
+}
+
+/*Bubbles styles*/
+.bubble, .bubble_up {
+    position: absolute;
+    width: 23em;
+    height: 1.6em;
+    left: -3em;
+    padding-left: .7em;
+    padding-top: .2em;
+    background: rgb(80,80,80);
+    color: white;
+    -webkit-border-radius: 0.25em;
+    -moz-border-radius: 0.25em;
+    border-radius: 0.25em;
+
+    font-family: HelveticaNeue, 'Open Sans', sans-serif;
+    font-size: 1em;
+    letter-spacing: .05em;
+}
+
+.bubble_up {
+    bottom: 3.8em;
+}
+
+.bubble:after, .bubble_up:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0.625em 0.625em 0;
+    border-color: rgb(80,80,80) transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    left: 15.875em;
+}
+.bubble_up:after {
+    border-width: 0 0.625em 0.625em;
+    bottom: 1.3em;
+    left: 20em;
+}
+
+
+
+/******************************************************************************************************************/
+    /* HEADER STYLES */
+/******************************************************************************************************************/
+.gradient {
+    width: 100%;
+    height: 12.5em;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0) 51%, rgba(0,0,0,0.4) 74%, rgba(0,0,0,1) 100%);
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(30%,rgba(0,0,0,0.4)), color-stop(51%,rgba(0,0,0,0)), color-stop(74%,rgba(0,0,0,0.4)), color-stop(100%,rgba(0,0,0,1)));
+background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=1 );*/
+
+}
+
+
+
+
+/***** 4-COLOR RIBBON ************************************************************************************************/
+    #ribbon {
+        margin: 0 auto;
+        margin-top: .9em;
+        padding-bottom: .8em;
+        z-index: 3;
+    }
+    
+    .one, .two, .three, .four {
+        width: 2.1em;
+        height: .24em;
+        float: left;
+    }
+    
+    .one {
+        background-color: rgb(184, 40, 93);
+    }
+    
+    .two {
+        background-color: rgb(222, 81, 124);
+    }
+    
+    .three {
+        background-color: rgb(224, 118,155);
+    }
+    
+    .four {
+        background-color: rgb(255, 146, 87);
+    }
+
+
+/***** NAVIGATION LINE ************************************************************************************************/
+    nav {
+        background-color: rgb(53, 58, 63);
+        padding-top: 1.1em;
+    }
+    
+    nav ul li {
+        width: 7em;
+        margin-right: .2em;
+        height: 2.165em;
+        float: left;
+        background-color: rgb(53, 58, 63);
+    }
+    
+    nav ul li:last-child {
+        width: 12em;
+        margin-left: 1em;
+        margin-right: 0;
+    }
+
+    nav ul li:last-child:hover {
+        background-color: rgba(0,0,0,0);
+    }
+    
+    nav ul li a {   
+        font-size: .95em;
+        color: white;
+        text-align: center;
+        line-height: 200%;
+        letter-spacing: .04em;
+        height: 2.4em;
+        z-index: 3;
+    }
+    
+    nav ul li:last-child a {
+        text-align: left;
+        z-index: 3;
+    }
+
+    nav ul li a:hover, a.active {
+        color: rgb(53, 58, 63);
+        z-index: 3;
+    }
+
+    nav ul li:hover, li.active {
+        background-color: rgb(206, 210, 211);
+        z-index: 3;
+    }
+
+    nav form {
+        position: relative;
+        z-index: 3;
+    }
+    
+/***** NAVIGATION ADMIN PAGE **************************************************************************************/
+
+#admin_options li a {
+    background-color: rgb(53, 58, 63);
+    text-align: left;
+    padding-left: .3em;
+    border: .15em solid rgb(206,210,211);
+}
+
+#admin_options li a:hover {
+    border-color: rgb(53, 58, 63);
+}
+
+#admin_options li a.active {
+    background-color: white;
+    color: rgb(53, 58, 63);
+    width: 10em;
+    border: none;
+}
+
+#admin_options li a.active:hover {
+    border-color: white;
+}
+
+#update_rid, #upload_rid, #update_rid, #update_user, #update_post, #update_comm {
+    margin-top: 1em;
+}
+
+.update li a {
+    margin-bottom: .2em;
+}
+
+ul.update li a:hover {
+    color: rgb(53, 58, 63);
+    text-decoration: underline;
+}
+
+
+
+/******************************************************************************************************************/
+    /* MAIN STYLES */
+/******************************************************************************************************************/
+main {
+    background-color: white;
+    z-index: 3;
+}
+
+.grey_main {
+    background-color: rgb(206, 210, 211);
+}
+
+section, section.basic {
+    width: 20.5em;
+    float: left;
+    margin-top: 1em;
+    background-color: white;
+}
+
+/* section class="basic"*/
+section.basic {
+    width: 42em;
+    float: none;
+}
+
+section.admin_section {
+    background-color: white;
+    width: 40em;
+    min-height: 13.1em;
+    height: auto;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    vertical-align: top;
+    margin-top: 0;
+    padding-top: 1em;
+}
+
+.admin_section #leave_comment {
+    padding: 0
+}
+
+div#adm_update_com div.row:first-of-type, div#adm_update_post div.row:first-of-type, div#adm_update_rid div.row:first-of-type, div#adm_update_user div.row:first-of-type {
+    height: 1.5em;
+}
+
+section i {
+    float: left;
+    margin-right: .2em;
+    margin-top: .08em;
+}
+
+p.post {
+    padding: 1em;
+}
+
+#landing_login {
+    margin-right: 1em;
+}
+
+#grey {
+    background-color: rgb(206, 210, 211);
+}
+
+.grey_bcgr {
+    background-color: rgb(231, 235, 236);
+    padding-left: 1em;
+    height: 1.6em;
+    padding-top: .3em;
+}
+
+.grey_bcgr ul li {
+    width: 8.5em;
+}
+
+.grey_bcgr ul li:last-of-type {
+    padding-left: 1em;
+    border-left: .1em solid rgb(53, 58, 63);
+}
+
+.grey_bcgr h4, .grey_bcgr ul li {
+    float: left;
+}
+
+.grey_bcgr ul li a:hover {
+    color: rgb(1, 181, 154);
+}
+
+p.timestamp {
+    float: right;
+    margin-right: 1em;
+}
+
+.top_post h4:first-of-type {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* .default_post of admin styles **********************************************************************************/
+.default_post>div:first-of-type, .freindspage_post>div:first-of-type {
+    height: 7.65em;
+}
+
+.default_post p.timestamp, .freindspage_post p.timestamp{
+    margin-top: 6.5em;
+}
+
+.default_post h4, .freindspage_post h4 {
+    float: none;
+}
+
+.default_post h4, .default_post i, .wr h4, .wr i {
+    color: rgb(1, 181, 154);
+}
+
+.top_post, .avatar_img {
+    margin-top: .4em;
+}
+
+.avatar_img {
+    width: 6.25em;
+    height: 6.25em;
+    background-color: rgb(222, 81, 124);
+    display: inline-block;
+    vertical-align: top;
+}
+
+.top_post {
+    display: inline-block;
+    width: auto;
+    margin-left: 1em;
+}
+
+/* styles of image in the post*/
+.img {
+    width: auto;
+    height: auto;
+    margin: 1em;
+    margin-bottom: 0;
+    background-color: pink;
+}
+
+/* leave_comment div on Leave Comment page ***********************************************************************/
+#leave_comment {
+    padding: 1em;
+}
+
+
+/* admin page menu ************************************************************************************************/
+aside {
+    width: 8.8em;
+    position: absolute;
+    left: -8.9em;
+    z-index: 0;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0.4) 30%, rgba(0,0,0,0) 51%, rgba(0,0,0,0.4) 74%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,1)), color-stop(30%,rgba(0,0,0,0.4)), color-stop(51%,rgba(0,0,0,0)), color-stop(74%,rgba(0,0,0,0.4)), color-stop(100%,rgba(0,0,0,1)));
+background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+background: -o-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+background: -ms-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0.4) 30%,rgba(0,0,0,0) 51%,rgba(0,0,0,0.4) 74%,rgba(0,0,0,1) 100%);
+}
+
+div#bye {
+    width: 6em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+}
+
+div#bye>p {
+    margin-bottom: .2em;
+}
+
+/******************************************************************************************************************/
+    /* FORMS' STYLES */
+/******************************************************************************************************************/
+.row h4 {
+    width: 2em;
+    display: inline-block;
+}
+
+#login {
+    margin-left: 1em;
+    margin-top: 2em;
+}
+
+form div:not(.row) {
+    margin-top: .8em;
+    margin-bottom: .6em;
+}
+
+#signin_form {
+    width: 34.2em;
+    margin-left: 1.2em;
+    float: left;
+}
+
+label {
+    width: 6em;
+    display: inline-block;
+    margin-top: .1em;
+    vertical-align: top;
+}
+
+label h4 {
+    font-weight: 600;
+}
+
+#answer {
+    width: 14em;
+}
+
+input, textarea {
+    border-radius: .4em;
+    height: 1.5em;
+    border: .124em solid rgb(53, 58, 63);
+    display: inline-block;
+    padding-left: .3em;
+}
+
+input {
+    width: 14.59em;
+}
+
+input[type="text"], input[type="password"], textarea {
+    font-size: .85em;
+    padding: .2em;
+}
+
+input[type="search"] {
+    border-radius: 0;
+    width: 10.25em;
+    height: 1.6em;
+}
+
+input[type="radio"] {
+    display: block;
+    width: 1.2em;
+    margin-right: .4em;
+    float: left;
+}
+
+input[name="avatar"], input[name="filename"] {
+    border: none;
+    width: 17.9em;
+    padding-left: 0;
+}
+
+input[type="file"] {
+    font-size: .8em;
+    padding-top: .1em;
+    line-height: 70%;
+}
+
+textarea {
+    width: 24em;
+    height: 10em;
+    padding-top: .1em;
+}
+
+#statement {
+    width: 20em;
+}
+
+.row {
+    padding-bottom: .1em;
+}
+
+#signin_form form {
+    margin-top: 2.8em;
+}
+
+#signin_form form #step2 {
+    margin-top: 5.45em;
+}
+
+#signin_form form #step3{
+    margin-top: 2.82em;
+}
+
+/***** VALIDATION_MSG + FORMS' HEADERS ****************************************************************************/
+p.validation_msg {
+    font-weight: bolder;
+    color: rgb(184, 40, 93);
+    height: 1em;
+    display: inline-block;
+    margin-left: .2em;
+    margin-top: .14em;
+    vertical-align: top;
+}
+
+p.top_validation {
+    display: block;
+    margin-top: .6em;
+    margin-bottom: .6em;
+    margin-left: 0;
+    padding-top: 0;
+} 
+
+p.validation_msg_grey {
+    color: rgb(166, 170, 171);
+    height: 1em;
+    display: inline-block;
+    margin-left: .2em;
+    margin-top: .14em;
+    vertical-align: top;
+}
+
+.admin_section p.validation_msg_grey {
+    margin-bottom: 1em;
+}
+
+#signin_form h3 {
+    padding-left: 0;
+}
+
+#signin_form #nomarg_valid_msg {
+    margin-left: 0;
+}
+
+
+/******** Profile page *********************/
+#tab-group h3 {
+    text-align: left;
+    padding-top: .47em;
+}
+
+#tab-group .validation_msg {
+    margin-top: .1em;
+    margin-left: 1em;
+}
+
+#kill_me h4 {
+    width: auto;
+}
+
+#suicide>h4, #kill_me .validation_msg {
+    width: 50em;
+    margin-left: 0;
+}
+
+#suicide>h4 {
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+/******************************************************************************************************************/
+    /* RABBIT'S PATH STYLES */
+/******************************************************************************************************************/
+#path {
+    float: left;
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+#rabbit, #rabbit1, #rabbit2, #rabbit3 {
+    width: 5em;
+    height: 5em;
+}
+
+#rabbit {
+    background-image: url(../images/rabbits/rabbit1.jpg);
+}
+
+#rabbit1 {
+    background-image: url(../images/rabbits/rabbit2.jpg);
+}
+
+#rabbit2 {
+    background-image: url(../images/rabbits/rabbit3.jpg);
+}
+
+#rabbit3 {
+    background-image: url(../images/rabbits/rabbit4.jpg);
+}
+
+.green_line, .green_line_longest, .green_line_long {
+    width: .4em;
+    height: 4.9em;
+    margin-left: 2.35em;
+    background-color: rgb(1, 181, 154);
+}
+
+.green_line_longest {
+    height: 8.8em;
+}
+
+.green_line_long {
+    height: 6.2em;
+}
+
+#rabbit_path {
+    float: left;
+    margin-left: 1.6em;
+}
+
+
+
+
+/******************************************************************************************************************/
+    /* FOOTER STYLES */
+/******************************************************************************************************************/
+footer {
+    margin: 0 auto;
+    height: 1em;
+    margin-top: 2em;
+}
+
+footer #ribbon {
+    padding-bottom: .05em;
+}
+
+footer>div:nth-child(2) {
+    width: 4em;
+}
+
+footer a {
+    color: rgb(53, 58, 63);
+    font-size: .6em;
+    font-weight: 400;
+    text-align: center;
+    line-height: 200%;
+    letter-spacing: .04em;
+}
+
+footer a:hover {
+    border-bottom: .2em solid rgb(53, 58, 63);
+}
+
+
+.cf:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+    
+.ready {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+#tab-group {
+    margin-top: .8em;
+}
+
+#tab-group.ready.tab-header {
+    width: 15.3em;
+    background-color: white;
+}
+
+.ready .tab-header {
+    width: 13.8em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    background-color: rgb(236, 240, 241);
+    z-index: 2;
+    cursor: pointer;
+    height: 2.2em;
+}
+
+.ready .tab-header.active {
+    background: white;
+}
+
+.ready .tab-content {
+    position: relative;
+    top: 2.2em;
+    margin: 0;
+    z-index: 1;
+    background-color: white;
+}
+
+.ready #tab-header-2 {
+    left: 13.8em;
+    margin-left: .31em;
+    margin-right: .31em;
+}
+
+.ready #tab-header-3 {
+    left: 28.22em;
+}
+
+.ready .tab-content {
+    display: none;
+}
+
+.ready .tab-content p {
+    margin: 0;
+    padding: 0 0 1em;
+}
+
+.ready .tab-content.active {
+    display: block;
+    padding: 1em;
+    padding-bottom: 0;
+}
+
+.user_options {
+    z-index: 10;
+    color: rgb(1, 181, 154);
+    margin-top: .25em;
+}
+
+
+/******************************************************************************************************************/
+    /* VALIDATION STYLES */
+/******************************************************************************************************************/
+.fail {
+    border: .124em solid rgb(184, 40, 93);
+    background-color: rgba(184, 40, 93, .3);
+}
+
+

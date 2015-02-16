@@ -1,0 +1,103 @@
+Time : 20:25:17
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':, ?, ?)' at line 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :, :statement, :answer)
+
+Time : 20:10:44
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'email'
+Raw SQL : INSERT INTO tbl_users (avatar) VALUES(:avatar)
+
+Time : 20:09:14
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Olga-green2.jpg' for key 'username'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 18:58:57
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 18:58:03
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer, :logic_attitude)
+
+Time : 18:56:05
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:55:56
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:55:28
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:55:25
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:55:02
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:54:40
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:54:34
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:54:32
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:53:50
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:53:39
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:53:36
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:51:02
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:51:00
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:50:23
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:50:14
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:50:13
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:49:52
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:49:49
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:49:25
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:48:30
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 18:44:47
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer, :logic_attitude)
+
+Time : 18:43:37
+SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer, :logic_attitude)
+
+Time : 18:42:51
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?)' at line 1
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer :logic_attitude)
+
+Time : 18:39:56
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_users (username, password, email, statement, avatar, logic_attitude) VALUES(:username, :password, :email, :statement, :avatar, :logic_attitude)
+
+Time : 16:05:14
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Raw SQL : SELECT username FROM tbl_users WHERE id = 
+
+Time : 11:10:05
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : SELECT page_title, page_description, page_headline, page_subline FROM tbl_pages WHERE id = :id

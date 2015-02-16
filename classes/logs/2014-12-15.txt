@@ -1,0 +1,47 @@
+Time : 10:29:15
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`comment`) AGAINST ("SECRET" IN BOOLEAN MODE) ORDER BY date_entered DESC' at line 1
+Raw SQL : SELECT comment FROM `tbl_comments` WHERE MATCH upper(`comment`) AGAINST ("SECRET" IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:27:13
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`comment`)) AGAINST ("SECRET" IN BOOLEAN MODE) ORDER BY date_entered DESC' at line 1
+Raw SQL : SELECT comment FROM `tbl_comments` WHERE MATCH (upper(`comment`)) AGAINST ("SECRET" IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:26:08
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`comment`) AGAINST ("SECRET" IN BOOLEAN MODE) ORDER BY date_entered DESC' at line 1
+Raw SQL : SELECT comment FROM `tbl_comments` WHERE MATCH upper(`comment`) AGAINST ("SECRET" IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:25:32
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`comment`) AGAINST ("secret" IN BOOLEAN MODE) ORDER BY date_entered DESC' at line 1
+Raw SQL : SELECT comment FROM `tbl_comments` WHERE MATCH upper(`comment`) AGAINST ("secret" IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:24:46
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(`comment`) AGAINST ("secret" IN BOOLEAN MODE) ORDER BY date_entered DESC' at line 1
+Raw SQL : SELECT comment FROM `tbl_comments` WHERE MATCH upper(`comment`) AGAINST ("secret" IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:10:01
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'serter' in 'where clause'
+Raw SQL : SELECT * FROM `tbl_comments` WHERE MATCH (comment) AGAINST (serter IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:09:47
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'secter' in 'where clause'
+Raw SQL : SELECT * FROM `tbl_comments` WHERE MATCH (comment) AGAINST (secter IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:07:02
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'secter' in 'where clause'
+Raw SQL : SELECT * FROM `tbl_comments` WHERE MATCH (comment) AGAINST (secter IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:06:55
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'olga' in 'where clause'
+Raw SQL : SELECT * FROM `tbl_comments` WHERE MATCH (comment) AGAINST (olga IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:06:34
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tart' in 'where clause'
+Raw SQL : SELECT * FROM `tbl_comments` WHERE MATCH (comment) AGAINST (tart IN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:05:38
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'BOOLEAN MODE) ORDER BY date_entered DESC' at line 1
+Raw SQL : SELECT * FROM `tbl_comments` WHERE MATCH (comment) AGAINST (tartIN BOOLEAN MODE) ORDER BY date_entered DESC
+
+Time : 10:02:26
+SQLSTATE[HY000]: General error: 1191 Can't find FULLTEXT index matching the column list
+Raw SQL : SELECT post FROM tbl_posts WHERE MATCH (`post_title`, `post`) AGAINST ("")

@@ -1,0 +1,35 @@
+Time : 18:32:51
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE `tbl_posts` SET 
+                                                    `post_title`=:post_title,
+                                                    `post`=:post 
+                                                    WHERE id="38"
+
+Time : 15:36:14
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE id="38"' at line 3
+Raw SQL : INSERT INTO tbl_posts SET
+                                        post_title =:post_title,
+                                        post =:post WHERE id="38"
+
+Time : 11:11:06
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 11:11:03
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 11:05:29
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 08:55:59
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts SET
+                                    username_id =:username_id,
+                                    post_title =:mypost_title,
+                                    post =:mypost
+
+Time : 08:55:09
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts SET
+                                    username_id =:username_id,
+                                    post_title =:mypost_title,
+                                    post =:mypost

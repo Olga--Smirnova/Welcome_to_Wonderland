@@ -1,0 +1,19 @@
+Time : 14:57:45
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE `tbl_posts` SET 
+                                                    `post_title`=:post_title,
+                                                    `post`=:post,
+                                                    `hide`=:hide,
+													`dead_line` =:deadline,
+													`riddle_answer` =:riddle_answer
+                                                    WHERE id="38"
+
+Time : 14:53:30
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : UPDATE `tbl_posts` SET 
+                                                    `post_title`=:post_title,
+                                                    `post`=:post,
+                                                    `hide`=:hide,
+													`dead_line` =:deadline,
+													`riddle_answer` =:riddle_answer
+                                                    WHERE id="38"

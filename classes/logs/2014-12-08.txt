@@ -1,0 +1,95 @@
+Time : 21:06:34
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'title of post, ? lovely post)' at line 1
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :the title of post, :my lovely post)
+
+Time : 21:06:06
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :sgdfgsgsdfg, :sgsdfgsdsdgsgf)
+
+Time : 21:04:46
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :sgdfgsgsdfg, :sgsdfgsdsdgsgf)
+
+Time : 21:04:14
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':"62", :"sgdfgsgsdfg", :"sgsdfgsdsdgsgf")' at line 1
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:"62", :"sgdfgsgsdfg", :"sgsdfgsdsdgsgf")
+
+Time : 21:02:42
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '', ?)' at line 1
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :sgdfgsgsdfg', :sgsdfgsdsdgsgf)
+
+Time : 20:57:25
+SQLSTATE[HY000]: General error: 2031 
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :mypost_title, :mypost)
+
+Time : 20:56:43
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :post_title, :post)
+
+Time : 20:56:38
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :post_title, :post)
+
+Time : 20:56:07
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:62, :post_title, :post)
+
+Time : 20:51:02
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:username_id, :post_title, :post)
+
+Time : 20:44:57
+SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+Raw SQL : INSERT INTO tbl_posts (username_id, post_title, post) VALUES(:username_id, :post_title, :post)
+
+Time : 17:32:08
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 17:31:38
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 17:31:24
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 17:31:14
+SQLSTATE[42000]: Syntax error or access violation: 1065 Query was empty
+
+Time : 12:53:37
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Raw SQL : SELECT username FROM tbl_users WHERE id = 
+
+Time : 10:22:32
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:12:47
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:07:36
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:06:11
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:03:17
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 10:03:14
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 09:59:56
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 09:49:12
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 09:45:07
+SQLSTATE[HY093]: Invalid parameter number
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)

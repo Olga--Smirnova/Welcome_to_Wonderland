@@ -1,0 +1,55 @@
+Time : 17:34:43
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'anus@dshfjk.ru' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 17:28:13
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'popa@gmail.com' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 16:34:04
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Pipa' in 'where clause'
+Raw SQL : SELECT id FROM tbl_users WHERE username=Pipa
+
+Time : 16:32:11
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Raw SQL : SELECT id FROM tbl_users WHERE username=Pipa AND password=
+
+Time : 16:32:09
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Raw SQL : SELECT id FROM tbl_users WHERE username=Pipa AND password=
+
+Time : 16:31:41
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Raw SQL : SELECT id FROM tbl_users WHERE username=Pipa  AND password=
+
+Time : 16:03:55
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'wqer' in 'where clause'
+Raw SQL : SELECT id FROM tbl_users WHERE username=wqer  AND password=$2y$10$4uqSnZ.S4l3/Rscp9IgHL.NG2/fQC8ctUrVbw.fh.9cHkbsETKPky
+
+Time : 16:02:39
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Popa' in 'where clause'
+Raw SQL : SELECT id FROM tbl_users WHERE username=Popa  AND password=$2y$10$s3MkHL/r0vP7nCzslYKpMOfWr2ZoDO3ug2WUDCSeiuXe2iawQ1iEC
+
+Time : 16:02:15
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'pipa@gmail.com' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 15:58:12
+SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Pipa' in 'where clause'
+Raw SQL : SELECT id FROM tbl_users WHERE username =Pipa  AND password=$2y$10$EXFDdbstKgR4zw92n/XUHOdPfGh13CZGeXId40VcZJygoCKz/YsHS
+
+Time : 15:57:25
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'popa@gmail.com' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 15:56:36
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND password=$2y$10$fKSE/Ut/xPrumskUPsGyTeq88ftDxR4newkGp4wRd6c5Fi7GTj2D2' at line 1
+Raw SQL : SELECT id FROM tbl_users WHERE username = AND password=$2y$10$fKSE/Ut/xPrumskUPsGyTeq88ftDxR4newkGp4wRd6c5Fi7GTj2D2
+
+Time : 15:56:13
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'pipa@gmail.com' for key 'email'
+Raw SQL : INSERT INTO tbl_users (username, password, email, avatar, statement, logic_attitude) VALUES(:new_username, :new_password, :mail, :avatar, :statement, :answer)
+
+Time : 15:50:33
+SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"SELECT username FROM tbl_users WHERE id =3"' at line 1
+Raw SQL : "SELECT username FROM tbl_users WHERE id =3"
